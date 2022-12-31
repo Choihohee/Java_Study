@@ -1,0 +1,12 @@
+class Type unicode {
+	public static void main(String[] args) {
+		char ch1='헐';
+		char ch2=54736;
+		char ch3=0xD5D0;
+		
+		System.out.println(ch1);
+		System.out.println(ch2);
+		System.out.println(ch3);
+	}
+	
+}
