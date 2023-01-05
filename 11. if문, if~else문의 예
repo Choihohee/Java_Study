@@ -5,7 +5,7 @@ public class ifOp{
 		
 		//if문
 		if(n1 < n2) {
-			System.out.println("n1 > n2 is True");
+			System.out.println("n1 < n2 is True");
 		}
 		
 		//if ~else 문
