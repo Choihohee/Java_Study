@@ -1,0 +1,15 @@
+public class Main {
+	public static void main(String[] args) {
+		int i=0, j=0;
+		
+		System.out.println("구구단을 계산하자!");
+		for(i=0; i<9; i++) {
+			System.out.println("-------"+i+"단--------");
+			for(j=0; j<9; j++) {
+				System.out.print("[" + i+"x"+j+"]"+"="+i*j);
+				System.out.print('\t');
+			}
+			System.out.println('\n');
+		}
+	}
+}
