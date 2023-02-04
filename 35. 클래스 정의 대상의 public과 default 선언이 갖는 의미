@@ -1,0 +1,29 @@
+package zoo;
+
+
+//Duck은 default로 선언되었으므로 동일 패키지 내에서만 인스턴스 생성 가능
+class Duck{
+	//빈 클래스
+}
+
+//Cat은 public 으로 선언되었으므로 어디서든 인스턴스 생성 가능
+public class Cat{
+	public void makeCat(){
+		//Duck과 같은 패키지로 묶여 있으니 Duck인스턴스 생성 가능
+		Duck quack=new Duck();
+	}
+}
+
+pakage animal;
+
+public class Dog{
+	public void makeCat(){
+		//Cat은 public으로 선언되었으므로 어디서든 인스턴스 생성가능
+		zoo.Cat yaong=new zoo.Cat();
+	}
+	
+	public void makeDuck(){
+		//Duck은 default로 선언되었으므로 이 위치에서 인스턴스 생성 불가
+		zoo.Duck quack=new zoo.Duck();	//컴파일 오류 발생 문장
+	}
+} 
