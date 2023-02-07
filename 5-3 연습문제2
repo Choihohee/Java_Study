@@ -1,0 +1,14 @@
+class Main{
+	public static void main(String[] args) {
+		int num=1;
+		
+		while(num<101) {
+			System.out.println(num);
+			num++;
+		}
+		do {
+			num--;
+			System.out.println(num);
+		}while(num>1);
+	}
+}
