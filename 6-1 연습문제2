@@ -1,0 +1,13 @@
+class Main{
+	public static void main(String[] args) {
+		absoluteValue(7, 8);
+	}
+	public static void absoluteValue(int n1, int n2) {
+		if(n1>n2)
+				System.out.println(n1-n2);
+		else if(n1<n2)
+			System.out.println((n1-n2)*(-1));
+		else
+			System.out.println(0);
+	}
+}
