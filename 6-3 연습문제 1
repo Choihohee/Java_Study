@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Main{
+	/*n을 전달받아 2의 n승을 계산 반환하는 메소드 재귀형태로*/
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		
+		long num=in.nextInt();
+		
+		System.out.println("2의" + num + "승 :" + powerOfTwo(num));
+	}
+	
+	public static long powerOfTwo (long num) {
+		if(num==0)
+			return 1;
+		else
+			return 2*powerOfTwo(num-1);
+	}
+}
