@@ -1,0 +1,22 @@
+public class SimpleBox {
+	private int data;
+		SimpleBox(int data){	//생성자
+			this.data=data;
+		}
+		void setData(int data){	//Setter
+			this.data=data;
+		}
+		void getData(int data){	//Getter
+			return this.data;
+		}	
+}
+class ThisInst{
+	public static void main(String[] args) {
+		SimpleBox box=new SimpleBox(99);
+		System.out.println(box.getData());
+		
+		box.setData(77);
+		System.out.println(box.getData());
+		
+	}
+}
