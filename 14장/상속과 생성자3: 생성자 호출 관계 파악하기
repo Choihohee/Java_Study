@@ -1,0 +1,17 @@
+class SuperCLS {
+   public SuperCLS() {
+      System.out.println("I'm Super Class");
+   }
+}
+
+class SubCLS extends SuperCLS {
+   public SubCLS() {
+      System.out.println("I'm Sub Class");
+   }
+}
+//호출할 상위 클래스의 생성자 명시하지 않으면 void 생성자 호출 됨
+class SuperSubCon {
+   public static void main(String[] args) {
+      new SubCLS();
+   }
+}
