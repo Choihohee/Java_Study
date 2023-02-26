@@ -1,0 +1,14 @@
+class SuperCLS {
+   static int count = 0;   // 클래스 변수
+   
+   public SuperCLS() {
+      count++;   // 클래스 내에서는 직접 접근이 가능
+   }
+} //프로그램 전체에서 딱 하나만 존재하는데 상속의 대상이 되겠는가?
+
+class SubCLS extends SuperCLS {
+   public void showCount() {
+      System.out.println(count);   // 상위 클래스에 위치하는 클래스 변수에 접근
+   }
+}
+//그러나 하위 클래스에서 이름만으로 접근 가능하다! 접근 수준 지시자에서 허용한다면!
