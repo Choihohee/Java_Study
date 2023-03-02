@@ -1,0 +1,20 @@
+class Cake {
+   public void yummy() {
+      System.out.println("Yummy Cake");
+   }
+}
+//Cake 클래스와 CheeseCake 클래스는 오버라이딩 관계. CheeseCake의 yummy 메소드가 Cake의 yummy 메소드를 오버라이딩
+
+class CheeseCake extends Cake {
+   public void yummy() { 
+      System.out.println("Yummy Cheese Cake");
+   }
+}
+
+public static void main(String[] args) {
+   Cake c1 = new CheeseCake();
+   CheeseCake c2 = new CheeseCake();
+   
+   c1.yummy(); 
+   c2.yummy(); 
+}
