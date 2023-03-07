@@ -1,0 +1,49 @@
+public class Main{
+
+    public static void main(String[] args){
+        String str1="Hello, World!";
+        String str2=new String("JAVA Programming");
+        String str3=str2;
+        str3=str1+ " " + str2;
+        System.out.println(str3);
+
+        int i=0;
+        int j=0;
+        String str4="학교";
+        System.out.println(str4 + " " + "의 글자수:" + str4.length());
+        String str5="대한민국";
+        i=2;
+        System.out.println(str5 + "의 " + i + "번째 글자: " + str5.charAt(i));
+        String str6="대한" + "민국";
+        if(str4.equals(str5))
+            System.out.println(str4 + "하고" + str5 + "은 같다");
+        else
+            System.out.println(str4 + "하고" + str5 + "은 다르다");
+
+        if(str5.equals(str6))
+            System.out.println(str5 + "하고" + str5 + "은 같다");
+        else
+            System.out.println(str6 + "하고" + str6 + "은 다르다");
+
+        String str7="SEOUL";
+        String str8="seoul";
+
+        boolean b1=str7.equals(str8);
+        boolean b2=str7.equalsIgnoreCase(str8);
+        System.out.println("equals():" + b1 + ", equalsIgnoreCase():" + b2);
+        boolean b3=str5.startsWith("대한");
+        boolean b4=str5.startsWith("대한",2);
+        System.out.println("starsWith():" + b3 + "," + b4);
+        i=str5.indexOf('민');    //3
+        j=str5.indexOf("한민");    //3
+        System.out.println("indexOf(): "+ i + "," + j);
+        String str9=str5.concat("서울");
+        System.out.println("concat():" + str9);
+        String str10=String.valueOf(new Integer(100));
+        System.out.println("String.valueOf():" + str10);
+
+        i=str5.compareTo(str9);
+        j=str8.compareToIgnoreCase(str7);
+        System.out.println("compareTo(): " + i + ",compareToIgnoreCase():" + j);
+    }
+}
