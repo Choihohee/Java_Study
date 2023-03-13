@@ -90,16 +90,4 @@ public class Character {
         //level=exp>=100+vlaue ?level++:level;
         //value +=5;
     }
-
-    //아이템을 얻는 메서드
-void getItem(Item item){
-    System.out.println(item.name + "을 획득하였습니다.");
-    for (int i = 0; i < item.length; i++) {
-        if(item[i]==null){
-            items[i]
-        }
-
-    }
-
-    }
 }
