@@ -27,7 +27,7 @@ public class Character {
 
     //상태창
     void showInfo(){
-        System.out.println("================================");
+        System.out.println("=================================");
         System.out.println("-------------- 상태 --------------");
         System.out.println("이름 : " + name);
         System.out.println("레벨 : " + level + "(" + exp + "/100)");
