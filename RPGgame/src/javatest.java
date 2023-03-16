@@ -84,7 +84,7 @@ public class Character {
         def += 2;
         hp = maxHp;
         mp = maxMp;
-        System.out.println("LEVEL UP!!");
+        System.out.println("LEVEL UP!");
 
         //int value=0;
         //level=exp>=100+vlaue ?level++:level;
