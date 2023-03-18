@@ -11,6 +11,7 @@ public class Character {
     int exp;        //경험치
     Item[] items;   //보유아이템
 	
+	
     //생성자를 만들어서 변수들을 초기화 - 외부에서 값을 받아와야 해서 파라미터를 만듦
     Character(String name, int hp, int mp, int att, int def){
         this.name = name;
