@@ -9,7 +9,7 @@ public class ifelseifelse {
 			System.out.println("0 이상 100 미만");
 		}
 		else {
-			System.out.println("100 이상");
+			System.out.println("100  이상");
 		}
 		
 	}
