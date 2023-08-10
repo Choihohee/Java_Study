@@ -4,7 +4,7 @@ public class switch {
 		
 		switch(n) {
 		case 1:
-			System.out.println("Simple Java");
+			System.out.println("Simple Java"); 
 		case 2:
 			System.out.println("Funny Java");
 		case 3:
