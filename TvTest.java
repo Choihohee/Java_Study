@@ -1,25 +1,31 @@
-package YoonJava;
+package NamgungsungJava;
 
 class Tv{
-	//Tv의 속성(멤버변수)
+	//멤버변수(속성)
 	String color;
-	boolean power;
+	boolean onoff;
 	int channel;
 	
-	//Tv의 기능(메서드)
-	void power() {	power = !power;	}
-	void channelUp() {	++channel;	}
-	void channeldown() {	--channel;	}
+	//메소드(기능)
+	void onoff() {
+		onoff = !onoff;
+	}
+	void channelUp() {
+		channel++;
+	}
+	void channelDown() {
+		channel--;
+	}
 }
 
-class TvTest {
-	public static void main(String[] args) {
+public class TvTest { 
+	public static void main(String[] args) { 
+		//인스턴스 생성
 		Tv t;
 		t = new Tv();
-		t.channel = 7;
-		t.channeldown();
-		System.out.println("현재 채널은" + t.channel + "입니다.");
-		
+		t.channel=10;
+		t.channelDown();
+		System.out.println("현재 채널은 " + t.channel + "번 입니다.");
 		
 	}
 }
