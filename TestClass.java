@@ -1,5 +1,5 @@
 package Ex6_29;
-
+ 
 class TestClass {
 	void instanceMethod()	{}//인스턴스 메서드
 	static void staticMethod()	{}//static메서드
