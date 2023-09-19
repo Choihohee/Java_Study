@@ -1,5 +1,5 @@
 package FastCampusJava02;
-
+ 
 public class TomasInfoTest {
 	public static void main(String[] args) {
 		TomasInfo Tomas = new TomasInfo();
